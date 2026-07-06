@@ -149,7 +149,7 @@ This opens the app in your browser (default: `http://localhost:8501`). Then:
 
 1. **Upload** 2 or more overlapping JPG/PNG images.
 2. Adjust options in the sidebar if desired (blending method, cylindrical projection, exposure compensation, debug mode, working resolution).
-3. Click **🧵 Stitch Panorama**.
+3. Click ** Stitch Panorama**.
 4. Watch the progress bar and status log.
 5. Review the **Detected image order**, the **Quality Dashboard** (confidence score, star rating, keypoints/matches/inliers/overlap), and the **ML Success Prediction** panel (success probability + expected quality, with a warning if confidence is low).
 6. Explore the result: feature-match debug view (if enabled), the warped images before blending, and the final panorama in the interactive zoom/pan viewer.
