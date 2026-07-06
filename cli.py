@@ -1,21 +1,3 @@
-"""
-cli.py
--------
-Command-line interface for the Panorama Stitcher.
-
-Supports stitching a single set of images, or batch-processing multiple
-sub-folders (each treated as one panorama job) in one run.
-
-Examples:
-    # Stitch all images in a folder into one panorama:
-    python cli.py --input sample_images/garden --output outputs/garden.png
-
-    # Batch mode: each sub-folder of --batch-input becomes its own panorama.
-    python cli.py --batch-input sample_images/ --output-dir outputs/
-
-Author: Panorama Stitching Project
-"""
-
 from __future__ import annotations
 
 import argparse
