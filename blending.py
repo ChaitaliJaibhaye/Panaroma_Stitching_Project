@@ -5,7 +5,7 @@ Blending strategies used to combine warped images on a shared panorama
 canvas without visible seams: feather (distance-weighted) blending and
 multi-band (Laplacian pyramid) blending.
 
-Author: Panorama Stitching Project
+
 """
 
 from __future__ import annotations
