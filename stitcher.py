@@ -5,7 +5,6 @@ Core orchestration of the panorama stitching pipeline: automatic image
 ordering, homography estimation (RANSAC), canvas computation, warping,
 exposure compensation, blending, and final cropping.
 
-Author: Panorama Stitching Project
 """
 
 from __future__ import annotations
