@@ -1,4 +1,4 @@
-# 🖼️ Panorama Image Stitcher — CV + Data Science Edition
+#  Panorama Image Stitcher — CV + Data Science Edition
 
 A production-quality panorama stitching application built with **Python, OpenCV, Streamlit, and scikit-learn**. Upload two or more overlapping photos of the same scene and get back a seamless, automatically-cropped panorama — plus a full **quality dashboard** and an **ML-based success predictor**, comparable to the panorama mode on a modern smartphone with a data-science layer on top.
 
@@ -40,34 +40,34 @@ It ships with:
 ## Features
 
 **Core requirements**
-- ✅ Upload 2+ images (JPG / JPEG / PNG) with thumbnail previews
-- ✅ SIFT feature detection (auto-falls back to ORB if SIFT is unavailable)
-- ✅ BFMatcher (ORB) / FLANN (SIFT) matching + Lowe's ratio test
-- ✅ Homography estimation with `cv2.findHomography` + RANSAC
-- ✅ Perspective warping onto a shared canvas (`cv2.warpPerspective`)
-- ✅ Seamless blending — **multi-band (Laplacian pyramid, default)** or **feather** blending, user-selectable
-- ✅ Automatic detection & cropping of black borders
-- ✅ Modern UI: upload button, stitch button, progress bar, status log, preview, download button
-- ✅ Robust error handling with user-friendly messages
+-  Upload 2+ images (JPG / JPEG / PNG) with thumbnail previews
+-  SIFT feature detection (auto-falls back to ORB if SIFT is unavailable)
+-  BFMatcher (ORB) / FLANN (SIFT) matching + Lowe's ratio test
+-  Homography estimation with `cv2.findHomography` + RANSAC
+-  Perspective warping onto a shared canvas (`cv2.warpPerspective`)
+-  Seamless blending — **multi-band (Laplacian pyramid, default)** or **feather** blending, user-selectable
+-  Automatic detection & cropping of black borders
+-  Modern UI: upload button, stitch button, progress bar, status log, preview, download button
+-  Robust error handling with user-friendly messages
 
 **Bonus features implemented**
-- ✅ Automatic image ordering (no need to upload in left-to-right order) — with a human-readable "Detected image order: Image3 → Image1 → Image2" display
-- ✅ Cylindrical projection (optional, own module, automatic focal-length estimation with a safe fallback)
-- ✅ Simple exposure/brightness compensation between overlapping images
-- ✅ Progress indicator with live status log
-- ✅ Drag-and-drop upload (native to Streamlit's file uploader)
-- ✅ Interactive zoom & pan viewer for the final panorama (scroll to zoom, drag to pan)
-- ✅ Debug mode: view feature-match visualizations and intermediate warped images
-- ✅ Save intermediate debug images to disk (`outputs/debug/`)
-- ✅ Batch panorama generation via CLI (`--batch-input`)
-- ✅ Full command-line interface
-- ✅ Graceful CPU fallback when CUDA-enabled OpenCV isn't present
+-  Automatic image ordering (no need to upload in left-to-right order) — with a human-readable "Detected image order: Image3 → Image1 → Image2" display
+-  Cylindrical projection (optional, own module, automatic focal-length estimation with a safe fallback)
+-  Simple exposure/brightness compensation between overlapping images
+-  Progress indicator with live status log
+-  Drag-and-drop upload (native to Streamlit's file uploader)
+-  Interactive zoom & pan viewer for the final panorama (scroll to zoom, drag to pan)
+-  Debug mode: view feature-match visualizations and intermediate warped images
+-  Save intermediate debug images to disk (`outputs/debug/`)
+-  Batch panorama generation via CLI (`--batch-input`)
+-  Full command-line interface
+-  Graceful CPU fallback when CUDA-enabled OpenCV isn't present
 
 **Data-science / ML layer (new)**
-- ✅ **Quality Dashboard**: images uploaded, processing time, avg. keypoints, avg. good matches, total RANSAC inliers, avg. inlier ratio, estimated overlap %, panorama resolution, blend method, projection on/off
-- ✅ **Confidence Score** (0–100, weighted: 40% inlier ratio / 30% match count / 20% overlap / 10% sharpness) with a ★-to-☆ star rating (Excellent → Failed)
-- ✅ **ML Success Predictor**: a RandomForestClassifier trained on a synthetic-but-heuristic-grounded dataset predicts stitch success probability and expected quality from 7 pre-stitch features, with a low-confidence warning surfaced in the UI
-- ✅ **Downloadable JSON stitching report** combining all of the above (`app.py` download button, or `cli.py --report`)
+-  **Quality Dashboard**: images uploaded, processing time, avg. keypoints, avg. good matches, total RANSAC inliers, avg. inlier ratio, estimated overlap %, panorama resolution, blend method, projection on/off
+-  **Confidence Score** (0–100, weighted: 40% inlier ratio / 30% match count / 20% overlap / 10% sharpness) with a ★-to-☆ star rating (Excellent → Failed)
+-  **ML Success Predictor**: a RandomForestClassifier trained on a synthetic-but-heuristic-grounded dataset predicts stitch success probability and expected quality from 7 pre-stitch features, with a low-confidence warning surfaced in the UI
+-  **Downloadable JSON stitching report** combining all of the above (`app.py` download button, or `cli.py --report`)
 
 ---
 
@@ -153,7 +153,7 @@ This opens the app in your browser (default: `http://localhost:8501`). Then:
 4. Watch the progress bar and status log.
 5. Review the **Detected image order**, the **Quality Dashboard** (confidence score, star rating, keypoints/matches/inliers/overlap), and the **ML Success Prediction** panel (success probability + expected quality, with a warning if confidence is low).
 6. Explore the result: feature-match debug view (if enabled), the warped images before blending, and the final panorama in the interactive zoom/pan viewer.
-7. Click **⬇️ Download Panorama (PNG)** and/or **⬇️ Download Stitching Report (JSON)** to save your results.
+7. Click ** Download Panorama (PNG)** and/or ** Download Stitching Report (JSON)** to save your results.
 
 ---
 
@@ -305,5 +305,3 @@ The application gracefully detects and reports, with user-friendly messages inst
 - Maximum-spanning-tree (rather than greedy chain) image ordering for very irregular, non-linear photo sets.
 
 ---
-
-Built with ❤️ using Python, OpenCV, NumPy, and Streamlit.
