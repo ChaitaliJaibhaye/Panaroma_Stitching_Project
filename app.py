@@ -36,7 +36,7 @@ def load_success_predictor() -> SuccessPredictor:
 
 st.set_page_config(
     page_title="Panorama Stitcher",
-    page_icon="🖼️",
+    page_icon="",
     layout="wide",
 )
 
@@ -186,7 +186,7 @@ def render_upload_section() -> None:
 
     if errors:
         for err in errors:
-            st.error(f"⚠️ {err}")
+            st.error(f" {err}")
 
     if images:
         st.caption(f"{len(images)} valid image(s) loaded.")
@@ -203,7 +203,7 @@ def render_dashboard() -> None:
     if report is None:
         return
 
-    st.markdown("### 📊 Panorama Quality Dashboard")
+    st.markdown("###  Panorama Quality Dashboard")
 
     m = report.metrics
     row1 = st.columns(4)
@@ -226,7 +226,7 @@ def render_dashboard() -> None:
     st.caption(f"**{report.rating_label}** — {report.stars_display()}")
 
     if report.warnings:
-        with st.expander("⚠️ Quality Warnings", expanded=True):
+        with st.expander(" Quality Warnings", expanded=True):
             for w in report.warnings:
                 st.warning(w)
 
