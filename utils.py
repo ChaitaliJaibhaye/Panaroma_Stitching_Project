@@ -5,7 +5,6 @@ General-purpose helper functions used across the panorama stitching
 pipeline: image validation/loading, black-border cropping, cylindrical
 projection, simple exposure compensation, and debug-image saving.
 
-Author: Panorama Stitching Project
 """
 
 from __future__ import annotations
