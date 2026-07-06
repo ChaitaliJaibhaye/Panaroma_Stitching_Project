@@ -19,7 +19,6 @@ or alternative projection models (e.g. spherical) in the future.
 around `cylindrical_warp_image` for any external code still importing
 it from there.
 
-Author: Panorama Stitching Project
 """
 
 from __future__ import annotations
