@@ -7,7 +7,7 @@ sharpness estimates, a single weighted "Confidence Score", and a
 human-friendly star rating — all surfaced in the Streamlit quality
 dashboard and exportable as a JSON stitching report.
 
-Author: Panorama Stitching Project
+
 """
 
 from __future__ import annotations
