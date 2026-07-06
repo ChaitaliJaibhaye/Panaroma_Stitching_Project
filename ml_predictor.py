@@ -16,7 +16,7 @@ strategy for early-stage ML products that lack labeled data yet.
 The trained model is cached to disk (`models/panorama_success_model.pkl`)
 so training only happens once per environment.
 
-Author: Panorama Stitching Project
+
 """
 
 from __future__ import annotations
