@@ -8,7 +8,7 @@ and descriptor matching (FLANN for SIFT's float descriptors, BFMatcher
 with Hamming distance for ORB's binary descriptors), followed by Lowe's
 ratio test to discard ambiguous matches.
 
-Author: Panorama Stitching Project
+
 """
 
 from __future__ import annotations
